@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Go Miles Club</title>
+<meta name="robots" content="noindex">
+<!-- Meta Pixel Go Miles -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','932676905335927');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=932676905335927&ev=PageView&noscript=1"></noscript>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#150c26;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  main{max-width:480px;margin:0 auto;padding:0 0 32px;display:flex;flex-direction:column;align-items:center}
+  .arte{display:block;width:100%;height:auto;cursor:pointer}
+  .cta{display:block;width:calc(100% - 32px);margin:20px 16px 0;padding:18px 16px;border:0;border-radius:999px;
+       background:linear-gradient(90deg,#8a2be2,#19e3a5);color:#fff;font-size:1.15rem;font-weight:800;
+       letter-spacing:.02em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(25,227,165,.25)}
+  .cta:active{transform:scale(.98)}
+  .nota{margin-top:12px;font-size:.85rem;opacity:.7;text-align:center;padding:0 16px}
+</style>
+</head>
+<body>
+<main>
+  <img class="arte" src="bf-01.jpg" width="1080" height="1920" alt="Black Friday Go Miles Club: até 50% OFF em todos os produtos, por tempo limitado" onclick="participar()">
+  <button class="cta" type="button" onclick="participar()">Quero participar</button>
+  <p class="nota">Você vai entrar no grupo do WhatsApp onde as ofertas serão liberadas.</p>
+</main>
+<script>
+  var DESTINO = 'https://sndflw.com/i/blackfridaygomilesclub';
+  var enviado = false;
+  function participar() {
+    if (enviado) return;
+    enviado = true;
+    try { fbq('track', 'Lead'); } catch (e) {}
+    var url = DESTINO + (location.search || '');
+    setTimeout(function () { location.href = url; }, 350);
+  }
+</script>
+</body>
+</html>
