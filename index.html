@@ -37,6 +37,7 @@ fbq('track','PageView');
 <script>
   var DESTINO = 'https://sndflw.com/i/blackfridaygomilesclub';
   var enviado = false;
+  window.addEventListener('pageshow', function () { enviado = false; });
   function participar() {
     if (enviado) return;
     enviado = true;
